@@ -5,10 +5,12 @@ Link de GoogleSheets: https://docs.google.com/spreadsheets/d/1YMLNJtzOx7gT5zRUlP
 Integrantes:
 Alexis Aragon Rodriguez: 
     Mail: alexisaragon79@gmail.com
-cesar alvarez
+cesar alvarez:
+    testinglagopuelo@gmail.com
 Johana Castillo: 
     Mail: Johana_castillo.9@outlook.es
-Malena Bustamante
+Malena Bustamante:
+    Mail: bustamante.malena1@gmail.com
 Priscila Rodríguez: 
     Mail: rodriguezpris10@gmail.com
 Vanina Torres: 
