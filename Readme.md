@@ -3,9 +3,13 @@ Link de Trello: https://trello.com/invite/b/6a2ec8c464111d28ba4609f6/ATTI8018252
 Link de GoogleSheets: https://docs.google.com/spreadsheets/d/1YMLNJtzOx7gT5zRUlPXvHeugUPzXEBAtB94W1IstnN0/edit?usp=sharing
 
 Integrantes:
-Alexis Aragon Rodriguez
+Alexis Aragon Rodriguez: 
+    Mail: alexisaragon79@gmail.com
 cesar alvarez
-Johana Castillo
+Johana Castillo: 
+    Mail: Johana_castillo.9@outlook.es
 Malena Bustamante
-Priscila Rodríguez
-Vanina Torres: vaniitorres@gmail.com
+Priscila Rodríguez: 
+    Mail: rodriguezpris10@gmail.com
+Vanina Torres: 
+    Mail: vaniitorres@gmail.com
