@@ -1,0 +1,9 @@
+{
+  "validContact": {
+    "name": "Juan Perez",
+    "email": "juan.perez@test.com",
+    "phone": "11223344556",
+    "subject": "Consulta general",
+    "message": "Este es un mensaje de prueba válido para verificar el funcionamiento del formulario."
+  }
+}
