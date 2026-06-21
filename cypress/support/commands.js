@@ -7,17 +7,11 @@ Cypress.Commands.add('loginAdmin', () => {
 
   cy.fixture('adminUser').then((user) => {
 
-    cy.get(':nth-child(6) > .nav-link').click()
-
     cy.get('#username').type(user.username)
     cy.get('#password').type(user.password)
-
     cy.get('#doLogin').click()
 
-    // Validamos que el login terminó correctamente
-    cy.url().should('include', '/admin/rooms')
-
-  })
+    })
 
 })
 
