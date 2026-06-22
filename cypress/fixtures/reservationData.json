@@ -1,0 +1,8 @@
+{
+  "validReservation": {
+    "nombre": "Juana",
+    "apellido": "Perez",
+    "email": "juanap@mail.com",
+    "telefono": "01234567890"
+  }
+}
