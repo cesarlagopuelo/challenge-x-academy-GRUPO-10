@@ -5,7 +5,9 @@ describe ('Login Admin ', ()=>{
     })
 
     it('Login exitoso', () => {
+        cy.intercept('get','**/admin/rooms').as('loginAdmin')
         cy.loginAdmin()
+        cy.wait('@loginAdmin').its('response.statusCode').should('eq', 200)
         cy.url().should('include', '/admin/rooms')
     })
 
