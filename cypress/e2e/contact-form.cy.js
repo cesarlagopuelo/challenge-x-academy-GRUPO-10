@@ -71,45 +71,40 @@ describe('Contact Form', () => {
     cy.contains('Thanks for getting in touch Juan Perez').should('be.visible')
   })
 
-  it('TC-CONT-04 - Envío de formulario como admin', () => {
+it('TC-CONT-04 - Envío de formulario como admin', () => {
 
-    // FIXTURE + CUSTOM COMMAND:
-    // Login reutilizable con datos centralizados
-
-    cy.loginAdmin()
-
-    // Navegación al front page
-    cy.get('#frontPageLink').click()
-
-    cy.url().should('eq', 'https://automationintesting.online/')
-
-    // API ASSERTION:
-    // Validamos que el backend procese el mensaje correctamente
-
-    cy.intercept('POST', '/api/message')
-      .as('sendMessage')
-
-    // FIXTURE + CUSTOM COMMAND:
-    // Cargamos datos del formulario desde fixture
-
-    cy.fixture('contactData').then((data) => {
-
-      cy.fillContactForm(data.validContact)
-
-    })
-
-    cy.get('.d-grid > .btn').click()
-
-    cy.wait('@sendMessage')
-      .its('response.statusCode')
-      .should('eq', 200)
-
-    // ASSERTION UI:
-    // Validamos mensaje de confirmación en pantalla
-
-    cy.contains('Thanks for getting in touch Juan Perez')
-      .should('be.visible')
-
+  // LIMPIEZA DE ESTADO
+  cy.window().then((win) => {
+    win.sessionStorage.clear()
+    win.localStorage.clear()
   })
+
+  // LOGIN ADMIN (CORREGIDO)
+  cy.loginAdmin()
+
+  // navegación
+  cy.get('#frontPageLink').click()
+
+  cy.url().should('eq', 'https://automationintesting.online/')
+
+  // INTERCEPT
+  cy.intercept('POST', '/api/message').as('sendMessage')
+
+  // FORMULARIO
+  cy.fixture('contactData').then((data) => {
+    cy.fillContactForm(data.validContact)
+  })
+
+  cy.get('.d-grid > .btn').click()
+
+  cy.wait('@sendMessage')
+    .its('response.statusCode')
+    .should('eq', 200)
+
+  // ASSERT UI
+  cy.contains('Thanks for getting in touch Juan Perez')
+    .should('be.visible')
+
+})
 
 })
