@@ -1,5 +1,6 @@
 import './commands'
 import './reservationCommands'
+import './commands/reservation.commands';
 
 // Ignoramos un error conocido de la aplicación
 // para que no haga fallar los casos de prueba.
