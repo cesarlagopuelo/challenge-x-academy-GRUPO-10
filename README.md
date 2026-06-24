@@ -96,7 +96,7 @@ https://docs.google.com/spreadsheets/d/1YMLNJtzOx7gT5zRUlPXvHeugUPzXEBAtB94W1Ist
 
 Tablero Trello:
 
-https://trello.com/invite/b/6a2ec8c464111d28ba4609f6c/ATTI801825210f6c9a7d01a43c9d45de354e9B4FA124/challenge-xacademy-grupo-10
+https://trello.com/b/RlWmJdwu
 
 ---
 
