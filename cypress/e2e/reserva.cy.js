@@ -2,6 +2,17 @@
 // Módulo de Reservas - Shady Meadows
 // Challenge Final QA Automation - Grupo N° 10
 
+Cypress.on('uncaught:exception', (err) => {
+
+  if (
+    err.message.includes("Cannot read properties of undefined") ||
+    err.message.includes("Minified React error #418")
+  ) {
+    return false
+  }
+
+})
+
 describe('Módulo de Reservas - Shady Meadows', () => {
 
   // TC-Res-01

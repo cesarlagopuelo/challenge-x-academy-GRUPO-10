@@ -4,32 +4,24 @@
 // Abre el login, carga credenciales desde fixture y valida navegación.
 
 Cypress.Commands.add('loginAdmin', () => {
-  // 1. IGNORAR ERROR DE REACT PRIMERO (Escudo activado antes de entrar)
-  cy.on('uncaught:exception', (err) => {
-    if (err.message.includes('Minified React error #418')) {
-      return false
-    }
-  })
 
-  // 2. Ahora sí visitamos la página de manera segura
-  cy.visit('/#/admin', {
-    failOnStatusCode: false
-  })
+  cy.visit('/')
 
-  // esperar render REAL de la app (no del input)
-  cy.get('body', { timeout: 20000 }).should('exist')
+  cy.get(':nth-child(6) > .nav-link')
+    .should('be.visible')
+    .click()
 
-  // FORZAR render del login (reintento real)
-  cy.wait(2000)
-
-  // validar existencia REAL del input
-  cy.get('input', { timeout: 20000 }).should('exist')
+  cy.get('#username')
+    .should('be.visible')
 
   cy.fixture('adminUser').then((user) => {
-    cy.get('#username', { timeout: 20000 }).type(user.username)
+
+    cy.get('#username').type(user.username)
     cy.get('#password').type(user.password)
     cy.get('#doLogin').click()
+
   })
+
 })
 
 

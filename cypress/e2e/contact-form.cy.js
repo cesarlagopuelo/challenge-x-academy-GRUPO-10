@@ -79,32 +79,33 @@ it('TC-CONT-04 - Envío de formulario como admin', () => {
     win.localStorage.clear()
   })
 
-  // LOGIN ADMIN (CORREGIDO)
+  // LOGIN ADMIN
   cy.loginAdmin()
 
-  // navegación
-  cy.get('#frontPageLink').click()
+  // VOLVER AL FRONTEND
+  cy.visit('/')
 
+  // VALIDAR QUE ESTAMOS EN HOME
   cy.url().should('eq', 'https://automationintesting.online/')
 
   // INTERCEPT
   cy.intercept('POST', '/api/message').as('sendMessage')
 
-  // FORMULARIO
+  // COMPLETAR FORMULARIO
   cy.fixture('contactData').then((data) => {
     cy.fillContactForm(data.validContact)
   })
 
   cy.get('.d-grid > .btn').click()
 
+  // VALIDACIÓN BACKEND
   cy.wait('@sendMessage')
     .its('response.statusCode')
     .should('eq', 200)
 
-  // ASSERT UI
+  // VALIDACIÓN UI
   cy.contains('Thanks for getting in touch Juan Perez')
     .should('be.visible')
 
-})
-
-})
+})  
+ })
