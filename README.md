@@ -2,7 +2,7 @@ Link de Trello: https://trello.com/invite/b/6a2ec8c464111d28ba4609f6/ATTI8018252
 
 Link de GoogleSheets: https://docs.google.com/spreadsheets/d/1YMLNJtzOx7gT5zRUlPXvHeugUPzXEBAtB94W1IstnN0/edit?usp=sharing
 
-<<<<<<< Updated upstream
+
 ## Aplicación bajo prueba
 
 https://automationintesting.online/
@@ -134,19 +134,4 @@ mail:vaniitorres@gmail.com
 ## Estado del proyecto
 
 Proyecto desarrollado como trabajo final de la Cohorte I - 2026 de X Academy.
-Todos los casos automatizados incluidos en el alcance fueron ejecutados satisfactoriamente al momento de la entrega.
-=======
-Integrantes:
-Alexis Aragon Rodriguez: 
-    Mail: alexisaragon79@gmail.com
-cesar alvarez:
-    testinglagopuelo@gmail.com
-Johana Castillo: 
-    Mail: Johana_castillo.9@outlook.es
-Malena Bustamante:
-    Mail: bustamante.malena1@gmail.com
-Priscila Rodríguez: 
-    Mail: rodriguezpris10@gmail.com
-Vanina Torres: 
-    Mail: vaniitorres@gmail.com
->>>>>>> Stashed changes
+
