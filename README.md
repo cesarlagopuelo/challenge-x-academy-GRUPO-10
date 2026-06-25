@@ -40,6 +40,8 @@ Incluye validaciones de interfaz y validaciones de API utilizando interceptacion
 
 * TC-RES-01
 * TC-RES-02
+* TC-RES-03
+* TC-RES-04
 
 Incluye validaciones funcionales del flujo de reserva y verificaciones sobre las respuestas de la API.
 
